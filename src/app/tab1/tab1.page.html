@@ -1,17 +1,46 @@
-<ion-header [translucent]="true">
+<ion-header>
+
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <ion-title>ここにバナー</ion-title>
   </ion-toolbar>
+
+  <ion-navbar>
+  <ion-menu>来店予約</ion-menu>
+  </ion-navbar>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content>
+  <ion-list>
+
+          <ion-item>
+                  <ion-label>予約名</ion-label>
+                  <input type="text" value="山本　太郎" class="put">
+          </ion-item>
+
+          <ion-item>
+                  <ion-label>電話番号</ion-label>
+                  <input type="text" value="0120-1234-5678" class="put">
+          </ion-item>
+
+          <ion-item>
+                  <ion-label>予約日時</ion-label>
+                  <input type="text" value="カレンダー" class="put">
+          </ion-item>
+
+          <ion-item>
+                  <ion-label>予約時間</ion-label>
+                  <input type="text" value="例）17：30～" class="put">
+          </ion-item>
+
+          <ion-item>
+                  <ion-label>備考欄</ion-label>
+                  <textarea>お子様、アレルギー等の都合をお教え下さい。</textarea>
+          </ion-item>
+
+          <button type="submit">保存</button>
+
+  </ion-list>
 </ion-content>
+
